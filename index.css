@@ -28,3 +28,25 @@ body {
   top: 56%;
   cursor: pointer;
 }
+
+/*caso resolução for no máximo 992px*/
+@media screen and (max-width: 992px) {
+  .div-1 {
+    background-color: rgb(155, 110, 27);
+  }
+
+  .div-2 {
+    background-color: rgb(14, 240, 240);
+  }
+
+  .div-3 {
+    background-color: rgb(84, 13, 90);
+  }
+}
+
+/*caso resolução for no máximo 685px*/
+@media screen and (max-width: 685px) {
+  .container {
+    display: block;
+  }
+}
