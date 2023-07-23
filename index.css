@@ -29,24 +29,19 @@ body {
   cursor: pointer;
 }
 
-/*caso resolução for no máximo 992px*/
-@media screen and (max-width: 992px) {
-  .div-1 {
-    background-color: rgb(155, 110, 27);
+/* Adicionando media query para dispositivos com largura máxima de 768px */
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 100%; /* para dispositivos móveis, usamos toda a largura disponível */
+    margin: 1% 0; /* removendo margem lateral para dispositivos móveis */
   }
 
-  .div-2 {
-    background-color: rgb(14, 240, 240);
+  .image {
+    width: 90%; /* Ajustando tamanho da imagem para dispositivos móveis */
   }
 
-  .div-3 {
-    background-color: rgb(84, 13, 90);
-  }
-}
-
-/*caso resolução for no máximo 685px*/
-@media screen and (max-width: 685px) {
-  .container {
-    display: block;
+  .toggle-password {
+    left: 85%; /* ajustando a posição do ícone de olho */
+    top: 50%;
   }
 }
