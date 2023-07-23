@@ -1,7 +1,7 @@
 // Ao carregar a página html ele já carrega a fotinho do animalzinho
 // Com os olhos abertos
 document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("image").src = "/_image/aberto.jpg"
+    document.getElementById("image").src = "./_image/aberto.jpg"
 });
 
 // Essa função só é chamada quando clicar no olho do formulario para mostrar a senha
@@ -18,7 +18,7 @@ async function mostrarSenha() {
 }
 
 function mostra() {
-    document.getElementById("image").src = "/_image/aberto.jpg"
+    document.getElementById("image").src = "./_image/aberto.jpg"
 }
 
 // Essa função esconde os olhos
@@ -30,11 +30,11 @@ function esconde() {
     // Então ele deve ficar o tempo todo com um olho tapado
     // Se o tipo for password é pq não foi clicado para mostrar a senha então
     // Deve ficar com os olhos fechados
-    (type === 'text' ? espia() : document.getElementById("image").src = "/_image/cobrindo.jpg")
+    (type === 'text' ? espia() : document.getElementById("image").src = "./_image/cobrindo.jpg")
 }
 
 // Função que mostra somente um olho aberto e o outro tapadinho
 function espia() {
-    document.getElementById("image").src = "/_image/espia.jpg"
+    document.getElementById("image").src = "./_image/espia.jpg"
 }
 
