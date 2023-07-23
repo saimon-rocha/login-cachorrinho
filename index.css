@@ -32,8 +32,9 @@ body {
 /* Adicionando media query para dispositivos com largura máxima de 768px */
 @media only screen and (max-width: 768px) {
   .form {
-    width: 100%; /* para dispositivos móveis, usamos toda a largura disponível */
-    margin: 1% 0; /* removendo margem lateral para dispositivos móveis */
+    width: 100%;
+    height: 50%;
+    margin: 1% 0;
   }
 
   .image {
@@ -41,7 +42,7 @@ body {
   }
 
   .toggle-password {
-    left: 85%; /* ajustando a posição do ícone de olho */
+    left: 77%; /* ajustando a posição do ícone de olho */
     top: 50%;
   }
 }
